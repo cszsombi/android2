@@ -16,31 +16,32 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public static final String BUNDLE_SYMBOL_ID_KEY = "SYMBOLID";
+    public static final String BUNDLE_SYMBOL_ID_KEY ="SYMBOLID";
     public static final Integer ACTIVITY_CLUBID_REQUEST_CODE = 3623;
     public static final Integer ACTIVITY_CLUBID_RESPONSE_NOTHING = 0;
     public static final Integer ACTIVITY_CLUBID_RESPONSE_DELETEME = 37;
 
 
-    private void showClubId(int symbolId) {
+    private void showClubId(int symbolId) {//club azonosítót tervezem átadni
         //átadandó adatok
-    Bundle dataToPass=new Bundle();
+        Bundle dataToPass = new Bundle();
         dataToPass.putInt(BUNDLE_SYMBOL_ID_KEY, symbolId);
+
         //célactivity
-        Intent intent=new Intent(MainActivity.this, Bajnoksag.class);
+        Intent intent = new Intent(MainActivity.this, Bajnoksag.class);
         intent.putExtras(dataToPass);
 
         startActivityForResult(intent, ACTIVITY_CLUBID_REQUEST_CODE);
-
+    }
         //alt instert
 
 
         @Override
         protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-            if(requestCode== ACTIVITY_CLUBID_REQUEST_CODE){
+            if(requestCode==ACTIVITY_CLUBID_REQUEST_CODE){
                 if(requestCode==ACTIVITY_CLUBID_RESPONSE_DELETEME){
                     //itt lesz a törlés
                 }
             }
-        }}
+        }
 }
