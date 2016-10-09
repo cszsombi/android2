@@ -24,7 +24,7 @@ public class DValue {
     public void setTimeStamp(Long mTimeStamp) {
         this.mTimeStamp = mTimeStamp;
     }
-
+//88
     public Double getmValue() {
         return mValue;
     }
