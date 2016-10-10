@@ -16,32 +16,32 @@ public class FootballDataProvider {
     public FootballDataProvider(){
         mSymbols=new ArrayList<DSymbol>();
 
-        //Minta adatok
+        //Minta adatok0
         {
             ArrayList<DValue> dValues=new ArrayList<DValue>();
             DSymbol dSymbol= new DSymbol("MINTA", dValues);
             for (int i=0; i<10; i++) {
-                DValue dValue = new DValue(System.currentTimeMillis() % 10, 10d + i * 1000 % 10, dSymbol);
+                DValue dValue = new DValue(System.currentTimeMillis() % 10, dSymbol,0 + (int)(Math.random() * ((15 - 0) + 1)),0 + (int)(Math.random() * ((15 - 0) + 1)), "Hazai","Vendeg");
                 dValues.add(dValue);
             }
             mSymbols.add(dSymbol);
         }
 
+        //Minta adatok1
         {
             ArrayList<DValue> dValues=new ArrayList<DValue>();
-            DSymbol dSymbol= new DSymbol("MINTA1", dValues);
+            DSymbol dSymbol= new DSymbol("MINTA", dValues);
             for (int i=0; i<10; i++) {
-                DValue dValue = new DValue(System.currentTimeMillis() % 10, 10d + i * 1000 % 10, dSymbol);
+                DValue dValue = new DValue(System.currentTimeMillis() % 10, dSymbol,0 + (int)(Math.random() * ((15 - 0) + 1)),0 + (int)(Math.random() * ((15 - 0) + 1)), "Hazai","Vendeg");
                 dValues.add(dValue);
             }
             mSymbols.add(dSymbol);
-        }
-
+        }//Minta adatok2
         {
             ArrayList<DValue> dValues=new ArrayList<DValue>();
-            DSymbol dSymbol= new DSymbol("MINTA2", dValues);
+            DSymbol dSymbol= new DSymbol("MINTA", dValues);
             for (int i=0; i<10; i++) {
-                DValue dValue = new DValue(System.currentTimeMillis() % 10, 10d + i * 1000 % 10, dSymbol);
+                DValue dValue = new DValue(System.currentTimeMillis() % 10, dSymbol,0 + (int)(Math.random() * ((15 - 0) + 1)),0 + (int)(Math.random() * ((15 - 0) + 1)), "Hazai","Vendeg");
                 dValues.add(dValue);
             }
             mSymbols.add(dSymbol);

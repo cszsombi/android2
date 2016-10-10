@@ -6,15 +6,23 @@ package com.data;
 
 public class DValue {
     private Long mTimeStamp;
-    private Double mValue;
+    //private Double mValue;
     private DSymbol mSymbol;
+    private Integer mHazai;
+    private Integer mVendeg;
+    private String mSHazai;
+    private String mSVendeg;
     public DValue() {
     }
 
-    public DValue(Long mTimeStamp, Double mValue, DSymbol mSymbol) {
+    public DValue(Long mTimeStamp, DSymbol mSymbol, Integer mHazai, Integer mVendeg, String mSHazai, String mSVendeg) {
         this.mTimeStamp = mTimeStamp;
-        this.mValue = mValue;
+        //this.mValue = mValue;
         this.mSymbol = mSymbol;
+        this.mHazai= mHazai;
+        this.mVendeg=mVendeg;
+        this.mSHazai = mSHazai;
+        this.mSVendeg =mSVendeg;
     }
 
     public Long getTimeStamp() {
@@ -24,7 +32,7 @@ public class DValue {
     public void setTimeStamp(Long mTimeStamp) {
         this.mTimeStamp = mTimeStamp;
     }
-//88
+/*
     public Double getmValue() {
         return mValue;
     }
@@ -32,12 +40,29 @@ public class DValue {
     public void setValue(Double mValue) {
         this.mValue = mValue;
     }
-
+*/
     public DSymbol getSymbol() {
         return mSymbol;
     }
 
     public void setSymbol(DSymbol mSymbol) {
         this.mSymbol = mSymbol;
+    }
+
+    public Integer getHazai()
+    {
+        return mHazai;
+    }
+    public Integer getVendeg()
+    {
+        return mVendeg;
+    }
+    public String getSHazai()
+    {
+        return mSHazai;
+    }
+    public String getSVendeg()
+    {
+        return mSVendeg;
     }
 }
