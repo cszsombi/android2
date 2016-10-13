@@ -38,6 +38,7 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         app:srcCompat="@android:drawable/alert_dark_frame"
         android:layout_below="@+id/imageButton"
         android:layout_marginLeft="60dp"
@@ -57,11 +58,11 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/alert_dark_frame"
         android:layout_below="@+id/imageButton3"
-        android:layout_alignLeft="@+id/imageButton3"
-        android:layout_alignStart="@+id/imageButton3"
-        android:layout_marginTop="50dp"
+        app:srcCompat="@android:drawable/alert_dark_frame"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="60dp"
+
         android:id="@+id/imageButton5" />
 
     <ImageButton
