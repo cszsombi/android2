@@ -1,2 +1,0 @@
-# android
-Andorid_project
