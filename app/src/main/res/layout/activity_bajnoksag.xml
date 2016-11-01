@@ -3,8 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/ColorZebra2">
 
+
+    <TextView
+        style="@style/ListTitle"
+        android:text="@string/main_add_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_weight="0.06"
+        android:gravity="center_vertical|center_horizontal" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -22,15 +32,11 @@
             android:gravity="center">
 
             <ImageButton
-                android:id="@+id/imageButton2"
-                android:background="@drawable/france"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginRight="50dp"/>
+                style="@style/FlagsLeft"
+                android:background="@drawable/france"/>
 
             <ImageButton
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                style="@style/FlagsRight"
                 android:id="@+id/imageButton"
                 android:background="@drawable/england" />
         </LinearLayout>
@@ -44,15 +50,13 @@
             android:gravity="center">
 
             <ImageButton
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                style="@style/FlagsLeft"
                 android:id="@+id/imageButton3"
                 android:background="@drawable/germany"
-                android:layout_marginRight="50dp"/>
+                />
 
             <ImageButton
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                style="@style/FlagsRight"
                 android:id="@+id/imageButton4"
                 android:background="@drawable/italy"/>
         </LinearLayout>
@@ -66,15 +70,12 @@
             android:gravity="center">
 
             <ImageButton
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                style="@style/FlagsLeft"
                 android:id="@+id/imageButton5"
-                android:background="@drawable/spain"
-                android:layout_marginRight="50dp"/>
+                android:background="@drawable/spain" />
 
             <ImageButton
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                style="@style/FlagsRight"
                 android:id="@+id/imageButton6"
                 android:background="@drawable/scotland" />
         </LinearLayout>

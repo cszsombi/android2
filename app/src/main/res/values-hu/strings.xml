@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Foci eredmények</string>
     <string name="main_button_databy">Adatok forrása football-data</string>
-    <string name="main_add_title">Adj hozzá egy bajnokságot</string>
+    <string name="main_add_title">Válassz egy bajnokságot</string>
     <string name="main_add_message">A bajnokság</string>
     <string name="main_about_title">Névjegy</string>
     <string name="main_about_text">Appot készítette Csuvi és Donát</string>
